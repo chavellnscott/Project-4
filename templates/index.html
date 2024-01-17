@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- D3 -->    
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js" />
+    </script>
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="container">
+    <div id = 'header'>
+        <div class="container">
+            <div class="row">
+                <h3>Learn to Fly</h3>
+                <p> By: Charles, Chavell, Kyle, and Matt</p>    
+                
+            </div> 
+        </div> 
+    </div>      
+    <div class="row">
+        <h3></h3>
+        <p> </p>
+        <div class="well">
+            <h5>Destination:</h5>
+            <select id="selDestination" ></select>
+        </div>
+        <div class="well">
+            <h5>Date:</h5>
+            <select id="selDate" ></select>
+        </div>
+        <div class="well">
+            <h5>Time:</h5>
+            <input type="text" id="selTime" class="form-control" placeholder="2359">
+        </div>
+        <div class="well">
+            <h5>Airline:</h5>
+            <select id="selAirline" ></select>
+        </div>
+        <div class="well">
+            <h5>Day of Week:</h5>
+            <select id="selDay" ></select>
+        </div>
+        <div class="jumbotron" style="text-align:center">
+            <button class="btn btn-outline-secondary" type="button" id="submit">
+                Flight Status Predictor
+            </button>
+            <div>
+                <p id="response"></p>
+            </div>
+        </div>
+    </div>
+        
+    
+<!-- JavaScript files -->
+    <script type="text/javascript" src="static/js/model.js"></script>
+</body>
+</html>
